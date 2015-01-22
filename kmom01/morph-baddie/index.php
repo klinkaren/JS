@@ -12,7 +12,7 @@
   <td>Skew vertical:</td>
   <td>Move:</td>
   <td>Move & Rotate:</td>
-  <td>Salto</td>
+  <td>Standing double salto</td>
 </tr>
 <tr>
   <td><div id='b1' class='baddie'></div></td>
