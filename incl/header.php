@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title><?php echo $title; ?></title>
   <link rel="stylesheet/less" type="text/css" href="style/style.less">
+  <script type="text/javascript">less = { env: 'development' };</script>
   <script src="js/less.min.js"></script>
   <link rel="shortcut icon" href="favicon_js.ico">  
 </head>

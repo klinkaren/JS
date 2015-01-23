@@ -4,6 +4,7 @@
 <meta charset='utf-8' />
 <title><?=isset($title) ? $title : 'Template for testprograms in JavaScript'?></title>
 <link rel="stylesheet/less" type="text/css" href="style.less">
+<script type="text/javascript">less = { env: 'development' };</script>
 <script src="../../../js/less.min.js"></script>
 <script src="../../../js/modernizr.js"></script>
 </head>
