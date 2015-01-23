@@ -1,0 +1,120 @@
+/**
+ * Import base style
+ */
+@import "base.less";
+
+/**
+ * Theme color base
+ */
+@theme: #555;
+
+/*
+ * General links
+*/
+a {
+  color: @theme - #222;
+  text-decoration: none;
+}  
+a:hover {
+  border-top: 1px solid @theme + #444;
+  border-bottom: 1px solid @theme + #444;
+  text-decoration: none;
+}
+
+
+/*
+ * List of test programs
+ */
+ul.test{
+	list-style-type: none;
+	a {
+	  color: @theme - #222;
+	  text-decoration: none;
+	}  
+	a:hover {
+	  border-top: 1px solid @theme + #444;
+	  border-bottom: 1px solid @theme + #444;
+	  text-decoration: none;
+	  font-style: italic;
+	}
+}
+
+/*
+ * Menu
+ */
+
+nav.navmenu {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	a {
+	  color: @theme - #222;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	}  
+
+	a:hover {
+	  border-top: 1px solid @theme + #444;
+	  border-bottom: 1px solid @theme + #444;
+	  text-decoration: none;
+	}
+} 
+/* highlight current choice in navigation menu */
+body#me a#me-,
+body#report a#report-,
+body#test a#test-,
+body#source a#source- {border-top: 1px solid @theme - #222; border-bottom: 1px solid @theme - #222;}
+
+article.report{
+	h1{
+		font-size: 2.375em
+	}
+	h2{
+		font-size: 1.8em
+	}
+	h3{
+		font-size: 1.2em
+	}
+	p{
+		//margin-left: 10px;
+	}
+}
+
+
+/**
+ * Unsorted
+ */
+
+html {
+	margin: 0;
+	padding: 0;
+	overflow-y:scroll; /* Always display the scrollbar, avoid flipping pages */
+}
+body {    
+    font-size: 11pt;  
+}
+
+div#content{overflow:auto;} /* clearer-fix */
+
+/* add padding and background to the footer block */
+footer#bottom{
+	margin-top: 1em;
+	padding-top:1em;
+	border-top: 1px solid @theme + #777;
+	padding-bottom: 1em;
+	color: @theme - #222;
+}
+.right{float:right;}
+.left{float:left;}
+
+
+/*
+ * Round corners
+ *
+ */
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+.rounded{.border-radius;}

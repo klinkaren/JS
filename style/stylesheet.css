@@ -1,0 +1,204 @@
+html {
+	background: #E6E6E6;
+	margin: 0;
+	padding: 0;
+	overflow-y:scroll; /* Always display the scrollbar, avoid flipping pages */
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	font-family: "Open Sans",sans-serif;
+	height: 100%;
+	
+}
+h2 {text-transform: uppercase; font-size:100%; color: #000;}
+img {border:0; /* No border around images if linked.*/
+}
+
+/* html5 elements */
+header,footer,nav,article,section,aside,figure,figcaption,output{display:block;}
+
+/* Layout -------------------------------------------------------*/
+header#above{
+	border-bottom:1px solid #E6E6E6;
+	margin-bottom:2px;
+	color:#333333
+}
+
+header#top{
+	color: red;
+	/*box-shadow: 0 0 25px 0 rgba(50, 50, 50, 0.3);*/
+}
+
+/* set width and center page */
+header#top,div#content,div.central{
+	margin:0 auto;
+	width:950px;
+}
+/* add padding and background to the footer block */
+footer#bottom{
+	padding-top:1em;
+	padding-bottom: 1em;
+	background:#E6E6E6;
+	font: italic 0.8em Arial, Helvetica, sans-serif; 
+	color: #333;
+}
+
+/* Footer */
+footer#bottom a {text-decoration:none;color: #000000;}
+footer#bottom a:link    { }
+footer#bottom a:visited { }
+footer#bottom a:hover   {text-decoration:underline;}
+footer#bottom a:active  { }
+footer#bottom {font: italic 0.8em Arial, Helvetica, sans-serif; color: #333;}
+
+
+div#content{overflow:auto;} /* clearer-fix */
+
+div#content{
+	color: #444;
+	font-size: small;
+}
+ /* First letter and first line ------------------------------------*/
+p#intro:first-letter {font-size: 200%; font-weight: bold; float: left;}
+p#intro:first-line {font-size: 125%;}
+
+/* article byline & signature -------------------------------------*/
+footer.byline {
+  clear: both;
+  border: 1px dashed #444;
+  margin-top:2em;
+  margin-bottom: 2em;
+  padding:1em;
+  color: #444;
+  font-size: small;
+  font-style:italic;
+  
+}
+
+footer.byline img {
+	padding:1px;
+	outline:#444 solid 1px;
+}
+
+/* navigation menu -----------------------------------------------*/
+nav.navmenu {
+    display: block;
+    padding: 0.2em 1em 0 1em;
+    background-color: #cccccc;
+}
+nav.navmenu a {
+    padding: 0.2em 1em 0 1em;
+    color: #000000;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-decoration:none;
+
+}
+nav.navmenu a:link    { }
+nav.navmenu a:visited { }
+nav.navmenu a:hover   {border-bottom: 2px solid #555555;border-top: 2px solid #555555;}
+nav.navmenu a:active  { }
+
+/* Login */
+nav.login {
+    float: right;
+	color: #666;
+    font-size: smaller;
+    padding: 0.2em 1em 0.3em;
+}
+
+/* highlight current choice in navigation menu --------------------*/
+body#me a#me-,
+body#report a#report-,
+body#guide a#guide-,
+body#blokket a#blokket-,
+body#blokket2 a#blokket2-,
+body#test a#test-,
+body#style a#style-,
+body#source a#source- {background: #aaaaaa;border: 2px solid #555555;}
+
+
+/* figure & figcaption --------------------------------------------*/
+figure {
+	border:1px solid #333333;
+	padding:4px;margin:1em;
+	text-align:center;
+	background: #ffffff;
+}
+figcaption {
+	font-style:italic;
+	font-size:smaller;
+	padding-left:1em;
+}
+figure.right{margin-right:5px;}
+figure.top{margin-top:0;}
+figure.fullwidth{margin-left:0;margin-right:0;}
+
+
+
+/*Links*/
+a {
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    color: #000000;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-decoration:none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+
+/* Misc classes --------------------------------------------------------*/
+
+/* BLOKKET */
+div.blokket > img{
+	float: right;
+	padding-right: 0.5em;
+	max-width: 120px;
+}
+div.blokket:nth-child(even){
+	background: #e6e6e6;
+	padding: 1em;
+	overflow:auto;
+	
+}
+div.blokket:nth-child(odd){
+	background: #fff;
+	padding:1em;
+	overflow:auto;
+}
+
+/* Lists*/
+ul.mylist{
+	list-style-position: inside;
+	list-style-type:none;
+	padding: 0;
+	border-left: solid 2px black;}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 1.45em;
+  border: none;
+}
+
+.right {float:right;}
+.left {float:left;}
+.justify, 
+.justify-para p {text-align:justify;}
+.shadow { -moz-box-shadow: 10px 10px 5px #888; -webkit-box-shadow: 10px 10px 5px #888; box-shadow: 5px 5px 5px #444;} 
+.roundcorners{ -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+
+code{
+	font: 1em/1.375 monospace;
+}
+p.thick {
+    font-weight: bold;
+	color: #000;
+}		
