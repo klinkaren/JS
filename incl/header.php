@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title><?php echo $title; ?></title>
-  <link rel="stylesheet/less" type="text/css" href="style/style.less" title="General stylesheet">
-  <script src="../js/less.min.js"></script>
+  <link rel="stylesheet/less" type="text/css" href="style/style.less">
+  <script src="js/less.min.js"></script>
   <link rel="shortcut icon" href="favicon_js.ico">  
 </head>
 
