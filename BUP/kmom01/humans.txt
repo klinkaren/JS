@@ -1,1 +1,0 @@
-Webbplats byggd av Viktor Kjellberg som en del av kursen Javascript tagen vid BTH VT15.
