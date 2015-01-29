@@ -15,7 +15,7 @@ $testlist = array(
 	    '5'=> array('text'=>'Morph it!', 			'url'=>$path.'morph-baddie',	 						'title' => 'Få baddien Tux att göra konster!'),
 	    '6'=> array('text'=>'Resize element',		'url'=>$path.'resize-element',							'title' => 'Ändra storleken på en div.'),
 	    '7'=> array('text'=>'Animate with timeout',	'url'=>$path.'animate-using-setTimeout',				'title' => 'Animera en knapp med hjälp av setTimeout.'),
-	    '8'=> array('text'=>'JSFiddle',				'url'=>'http://jsfiddle.net/klinkaren/dvyu3xo3/',	'title' => 'Mall i JSFiddle.')
+	    '8'=> array('text'=>'JSFiddle',				'url'=>'http://jsfiddle.net/klinkaren/dvyu3xo3/',		'title' => 'Mall i JSFiddle.')
     )
     // sätt ett komma efter ) ovan och fyll på med kmom02. menyn uppdateras automatiskt.
   )
