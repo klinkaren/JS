@@ -16,7 +16,9 @@ $testlist = array(
 	    '6'=> array('text'=>'Resize element',		'url'=>$path.'resize-element',							'title' => 'Ändra storleken på en div.'),
 	    '7'=> array('text'=>'Animate with timeout',	'url'=>$path.'animate-using-setTimeout',				'title' => 'Animera en knapp med hjälp av setTimeout.'),
 	    '8'=> array('text'=>'JSFiddle',				'url'=>'http://jsfiddle.net/klinkaren/dvyu3xo3/',		'title' => 'Mall i JSFiddle.')
-    )
+    ),
+	'kmom02' => array(
+		'1'=> array('text'=>'Literaler och dess typ',	'url'=>$path.'literals-and-identifiers',			'title' => 'Testprogram som skriver ut literaler tillsammans med dess typ.'), ),
     // sätt ett komma efter ) ovan och fyll på med kmom02. menyn uppdateras automatiskt.
   )
 ?>
@@ -35,10 +37,10 @@ $testlist = array(
 				foreach($headline as $test) {
 					echo '<li><a title="'.$test['title'].'" href="'.$test['url'].'">'.$test['text'].'</a></li>';
 			  	}	
+				echo '</ul>';
 			}   
 
 			 ?>
-		</ul>
 	</article>
 </div>
 <?php include("incl/footer.php"); ?>
