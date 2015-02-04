@@ -3,13 +3,13 @@
  */
 $(document).ready(function(){
   'use strict';
-  var num,
+  var num, 
     element = document.getElementById('text');
 
   function roll (element, num) {
     var i, rolls, res = '', sum = 0, val;
     for (i = 0; i < num; i++) {
-      val = random(1,6);
+      val = Kjellb.random(1,6);
       sum += val;
       res += val + ', ';
     }
@@ -17,9 +17,7 @@ $(document).ready(function(){
     element.innerHTML += 'Average: '+ (sum/num).toPrecision(2) + '. Serie: ' + res + '<br>';
   };
 
-  function random (min, max) {
-    return Math.floor(Math.random()*(max+1-min)+min);
-  }
+
 
   console.log('Starting');
   element.className = 'black';

@@ -18,11 +18,13 @@ $testlist = array(
 	    '8'=> array('text'=>'JSFiddle',				'url'=>'http://jsfiddle.net/klinkaren/dvyu3xo3/',		'title' => 'Mall i JSFiddle.')
     ),
 	'kmom02' => array(
-		'1'=> array('text'=>'Literaler och dess typ',	'url'=>$path.'literals-and-identifiers',			'title' => 'Testprogram som skriver ut literaler tillsammans med dess typ.'), 
-		'2'=> array('text'=>'Nummer',					'url'=>$path.'numbers',								'title' => 'Testprogram för tal.'),
-		'3'=> array('text'=>'Strängar',					'url'=>$path.'strings',								'title' => 'Testprogram för strängar.'),
-		'4'=> array('text'=>'Tärningskast',				'url'=>$path.'dice',								'title' => 'Testprogram där en tärning kastas och genomsnitt av kastserien visas.'),
-		'4'=> array('text'=>'Knuffa bollen',			'url'=>$path.'push-the-ball',								'title' => 'Testprogram där en boll knuffas runt.')
+		'1'=> array('text'=>'Literaler och dess typ',	 'url'=>$path.'literals-and-identifiers',			'title' => 'Testprogram som skriver ut literaler tillsammans med dess typ.'), 
+		'2'=> array('text'=>'Nummer',					 'url'=>$path.'numbers',							'title' => 'Testprogram för tal.'),
+		'3'=> array('text'=>'Strängar',					 'url'=>$path.'strings',							'title' => 'Testprogram för strängar.'),
+		'4'=> array('text'=>'Tärningskast',				 'url'=>$path.'dice',								'title' => 'Testprogram där en tärning kastas och genomsnitt av kastserien visas.'),
+		'5'=> array('text'=>'Knuffa bollen',			 'url'=>$path.'push-the-ball',						'title' => 'Testprogram där en boll knuffas runt.'),
+		'6'=> array('text'=>'Boulder Dash'	,			 'url'=>$path.'boulder-dash',						'title' => 'Testprogram med inspiration från Boulder Dash.'),
+		'6'=> array('text'=>'Roulette enligt Martingale','url'=>$path.'martingale',							'title' => 'Testprogram som spelar roulette enligt Martingale-systemet.')
 	),
   )
 ?>

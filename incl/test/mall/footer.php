@@ -46,6 +46,7 @@
 </footer>
 <script src="../../../js/jquery.js"></script>
 <script src="../mall/mos.js"></script>
+<script src="../mall/kjellb.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

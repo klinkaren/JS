@@ -1,0 +1,57 @@
+/**
+ * Import base style
+ */
+@import "../mall/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+/** --------------------------------------------------------------
+ * Baddie from CSS sprite.
+ * 
+ */
+@tile-size:32px;
+@tile-offset:34px;
+#flash{width:@tile-size*24;height:@tile-size*24;}
+#b1{position:absolute;}
+
+.baddie{width:32px;height:32px;background-image:url(../img/boulder-dash/tux_small.png);
+  .transition-property(e('left,top'));.transition-duration(0.5s);.transition-timing-function(ease);
+  &.up{background-position:32px 0;}
+  &.down{background-position:64px 0px;}
+  &.left{background-position:96px 0;}
+  &.right{background-position:0 0;}
+  &.rightdoublesalto{.rotate(720deg);.transition(all,1.0s)}
+  &.leftdoublesalto{.rotate(-720deg);.transition(all,1.0s)}
+}
+
+/** --------------------------------------------------------------
+ * Boulder Dash Gameplan
+ * 
+ */
+//@bgcolor:green;
+.tile, .t, .block, .b{width:@tile-size;height:@tile-size;float:left;background-repeat:no-repeat;}
+.t12{background-image:url(../img/boulder-dash/grass0.png);}
+.t13{background-image:url(../img/boulder-dash/grass1.png);}
+.t14{background-image:url(../img/boulder-dash/grass2.png);}
+.t15{background-image:url(../img/boulder-dash/grass_flowers_red3.png);}
+.t16{background-image:url(../img/boulder-dash/grass_flowers_blue3.png);}
+.t17{background-image:url(../img/boulder-dash/grass_flowers_yellow3.png);}
+.t18{background-image:url(../img/boulder-dash/grass_n.png);}
+.t19{background-image:url(../img/boulder-dash/grass_nw.png);}
+.t20{background-image:url(../img/boulder-dash/grass_w.png);}
+.t21{background-image:url(../img/boulder-dash/grass_full.png);}
+.t22{background-image:url(../img/boulder-dash/grass_sw.png);}
+.t23{background-image:url(../img/boulder-dash/grass_s.png);}
+.t24{background-image:url(../img/boulder-dash/grass_se.png);}
+.t25{background-image:url(../img/boulder-dash/grass_e.png);}
+.t26{background-image:url(../img/boulder-dash/grass_ne.png);}
+
+.b11{background-image:url(../img/boulder-dash/dngn_metal_wall.png);}
+.b12{background-image:url(../img/boulder-dash/crystal_wall02.png);}
+.b13{background-image:url(../img/boulder-dash/dngn_mirrored_wall.png);}
+.b14{background-image:url(../img/boulder-dash/dngn_green_crystal_wall.png);background-color:green;}
+.b17{background-image:url(../img/boulder-dash/dngn_open_door.png);background-color:#bbb;}
+.b18{background-image:url(../img/boulder-dash/dngn_closed_door.png);}
+.b19{background-image:url(../img/boulder-dash/brick_brown-vines1.png);}
+
