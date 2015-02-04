@@ -9,6 +9,7 @@ include("incl/header.php");
 	<article class="report">
 		<h1>Redovisning av kursmoment</h1>
 			<h2>Kmom02: Programmera med JavaScript</h2>
+				<p>Tyckte det här kursmomentet var klurigt. Blev väldigt få utsvävningar från min sida då jag var tvungen att lägga stor tonvikt vid att förstå koden och komma in i syntaxen. Använde mig väldigt mycket av Firebug för att felsöka med hjälp av möjligheten att stega sig igenom javascript. Väldigt användbart och bra för att förstå hur koden exekveras.</p>
 				<h3>Vilka funktioner har du lagt till i din variant av mos.js?</h3>
 					<p>Hade först lite problem med var jag skulle lägga min egen variant (kjellb.js) och hur jag skulle inkludera den. Blev till slut på samma sätt som mos.js i footern till mina test så att den inkluderas i alla testsidor. </p>
 					<p>När jag höll på med tärningsövningen kände jag att en random-funktion kan vara praktiskt att ha i bakfickan så kastade in den i kjellb.js.</p>
