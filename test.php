@@ -24,7 +24,11 @@ $testlist = array(
 		'4'=> array('text'=>'Tärningskast',				 'url'=>$path.'dice',								'title' => 'Testprogram där en tärning kastas och genomsnitt av kastserien visas.'),
 		'5'=> array('text'=>'Knuffa bollen',			 'url'=>$path.'push-the-ball',						'title' => 'Testprogram där en boll knuffas runt.'),
 		'6'=> array('text'=>'Boulder Dash'	,			 'url'=>$path.'boulder-dash',						'title' => 'Testprogram med inspiration från Boulder Dash.'),
-		'6'=> array('text'=>'Roulette enligt Martingale','url'=>$path.'martingale',							'title' => 'Testprogram som spelar roulette enligt Martingale-systemet.')
+		'7'=> array('text'=>'Roulette enligt Martingale','url'=>$path.'martingale',							'title' => 'Testprogram som spelar roulette enligt Martingale-systemet.')
+	),
+	'kmom03' => array(
+		'1'=> array('text'=>'Test',	 'url'=>$path.'test',													'title' => 'Lekplats.'), 
+		'2'=> array('text'=>'Nio paket',					 'url'=>$path.'nine-gifts',							'title' => 'Nio små javascript-paket.'),
 	),
   )
 ?>
