@@ -8,30 +8,47 @@
  */
 .box{
 	float:left;
-	width: 33%;
+	width: 30%;
+	border: 1px solid #222;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 5px;
+	position: relative;
+	background-color: #fff;
+
+	// Minimize button
+	.minimize{
+		float:right;
+		height:6px;
+		line-height:0;
+		padding:3px;margin:0;border:2px solid #999;
+		border-radius: 2px;
+		color:#999;
+    	&:hover{cursor:pointer;}
+    }
+}
+img {
+	float:right;
 }
 
+.fullWidth{
+	width: 95%;
+}
 
+// Hide at load
+.unwrapped, .minimize{
+	display: none;
+}
 
  //Old stuff (remove?)
-.zebra{
-	background-color: #ccc;
-	color: #222;
+.dark{
+	background-color: #222;
+	color: #fff;
 }
-.menu{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	li{
-		display: inline;
-	}
-	a{
-		text-decoration: none;
-		color: #000;
-		margin: 10px;
-		padding: 10px;
-	}
-	a:hover{
-
-	}
+.thumbnail{
+	width: 50px;
+	border-radius: 10px;
+}
+div.palette{height:40px;width:40px;border:1px solid #ccc;float:left;margin:2px;display:block;
+  &:hover{cursor:crosshair;}
 }
