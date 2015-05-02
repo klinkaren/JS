@@ -27,8 +27,9 @@ $testlist = array(
 		'7'=> array('text'=>'Roulette enligt Martingale','url'=>$path.'martingale',							'title' => 'Testprogram som spelar roulette enligt Martingale-systemet.')
 	),
 	'kmom03' => array(
-		'1'=> array('text'=>'Test',	 'url'=>$path.'test',													'title' => 'Lekplats.'), 
-		'2'=> array('text'=>'Nio paket',					 'url'=>$path.'nine-gifts',							'title' => 'Nio små javascript-paket.'),
+		'1'=> array('text'=>'Test',	 					 'url'=>$path.'test',								'title' => 'Lekplats.'), 
+		'2'=> array('text'=>'Nio paket',				 'url'=>$path.'nine-gifts',							'title' => 'Nio små javascript-paket.'),
+		'3'=> array('text'=>'Plugin',					 'url'=>$path.'plugin',								'title' => 'Min plugin.'),
 	),
   )
 ?>
@@ -39,15 +40,15 @@ $testlist = array(
 		<h1>Test-sida</h1>
 		
 			<?php
-			$i=0;
-			foreach($testlist as $headline) {
-				$i++;
+			$i=count($testlist);
+			foreach(array_reverse($testlist) as $headline) {
 				echo '<h2>KMOM '.$i.'</h2>';
 				echo '<ul class="test">';
 				foreach($headline as $test) {
 					echo '<li><a title="'.$test['title'].'" href="'.$test['url'].'">'.$test['text'].'</a></li>';
 			  	}	
 				echo '</ul>';
+				$i--;
 			}   
 
 			 ?>

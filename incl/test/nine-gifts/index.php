@@ -18,7 +18,7 @@
 	<div class='minimize' title='Miminize this box'>x</div>
 	<img src="../../../img/giftbox.png" alt="" class="gift">
 	<h1 class="gift">2.</h1>
-		<span class="unwrapped">
+	<span class="unwrapped">
 		<img src='../../../img/me2.jpg?w=200' alt='' />
 		<h1>2. Bakgrund och bildstorlek</h1>
 		<p>Kolla vad skoj!. I det här exemplet kan vi både byta bakgrundsfärg OCH ändra storlek på bilden!!!</p>  
@@ -41,7 +41,7 @@
 	<div class='minimize' title='Miminize this box'>x</div>
 	<img src="../../../img/giftbox.png" alt="" class="gift">
 	<h1 class="gift">4.</h1>
-		<span class="unwrapped">
+	<span class="unwrapped">
 		<img id='me-image-4' class='example' src='../../../img/me2.jpg?w=200' alt='' width='200px' height='254px' />
 		<h1>4. Selecting items, hide, show and change their look</h1>
 		<p>Aint it funny to be young. No worries here. I'm smiling :-D and I still have those shoes somewhere in the attic.</p>  
@@ -74,12 +74,10 @@
 	<div class='minimize' title='Miminize this box'>x</div>
 	<img src="../../../img/giftbox.png" alt="" class="gift">
 	<h1 class="gift">6.</h1>
-		<span class="unwrapped">
-		<h1>1. Selecting items, hide, show and change their look</h1>
-		<p>Aint it funny to be young. No worries here. I'm smiling :-D and I still have those shoes somewhere in the attic.</p>  
-		<p>This example is just to get going. You migh wonder how this box opens and closes? Its just a matter of hiding and showing the elements you want to display. The box minimizes itself when you click the x up in the right corner and you can open it up in full width by clicking the number or the wrapped giftbox.</p>
-		<p>When you click on the text or images in this example it will shift (toggle) between dark and light color.</p>
-		<p>Its all about using selectors and the eventhandlers.</p>
+	<span class="unwrapped">
+		<img class='lightbox' src='../../../img/me2.jpg' alt='' width='200px' />
+		<h1>6. Lightbox</h1>
+		<p>Klicka på bilden så får du en extra generöst stor version av mig.</p>
 	</span>
 </div>
 <div id="box7" class="box">
@@ -118,9 +116,7 @@
 		<p>Its all about using selectors and the eventhandlers.</p>
 	</span>
 </div>
-<!--
-<input type="button" id="toggleButton" value="Hide" />
--->
+
 <table class="data" id="celebs">
 	<thead>
 		<tr>
@@ -146,25 +142,7 @@
 		<td>$1000</td>
 	</tr>
 </table>
-<!--
-<input type="button" id="hideButton" value="hide" />
-<input type="button" id="showButton" value="show" />
--->
-	
 
-
-<!--Sample page-->
-<HR>
-<a href="http://somegreatsite.com">Link Name</a>
-is a link to another nifty site
-<H1>This is a Header</H1>
-<H2>This is a Medium Header</H2>
-Send me mail at <a href="mailto:support@yourcompany.com">
-support@yourcompany.com</a>.
-<P> This is a new paragraph!
-<P> <B>This is a new paragraph!</B>
-<BR> <B><I>This is a new sentence without a paragraph break, in bold italics.</I></B>
-<HR>
 
 </div>
 
