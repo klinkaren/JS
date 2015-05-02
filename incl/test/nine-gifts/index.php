@@ -97,11 +97,14 @@
 	<img src="../../../img/giftbox.png" alt="" class="gift">
 	<h1 class="gift">8.</h1>
 		<span class="unwrapped">
-		<h1>1. Selecting items, hide, show and change their look</h1>
-		<p>Aint it funny to be young. No worries here. I'm smiling :-D and I still have those shoes somewhere in the attic.</p>  
-		<p>This example is just to get going. You migh wonder how this box opens and closes? Its just a matter of hiding and showing the elements you want to display. The box minimizes itself when you click the x up in the right corner and you can open it up in full width by clicking the number or the wrapped giftbox.</p>
-		<p>When you click on the text or images in this example it will shift (toggle) between dark and light color.</p>
-		<p>Its all about using selectors and the eventhandlers.</p>
+		<h1>8. Slideshow</h1>
+		<div class='slideshow'>
+		  <img src1='../../../img/movieScreenshots/01.jpg' crop='0,200,0,300'/> 
+		  <img src1='../../../img/movieScreenshots/02.jpg' crop='0,200,0,0'/>
+		  <img src1='../../../img/movieScreenshots/03.jpg' crop='0,200,0,220'/>
+		  <img src1='../../../img/movieScreenshots/04.jpg' crop='0,200,0,100'/>
+		</div> <!-- end of slideshow -->
+		<p>"This is not a slideshow" - Magritte 2.0</p>
 	</span>
 </div>
 <div id="box9" class="box">

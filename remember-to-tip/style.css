@@ -1,0 +1,17 @@
+@import "http://fonts.googleapis.com/css?family=Roboto";
+
+body{
+	background-color: #ccc;
+	font-family: "Roboto",sans-serif;
+}
+.right{
+	float: right;
+}
+#madeBy{
+	font-size: 80%;
+	color: #444;
+}
+#tooltip h1{
+	padding-top: 0px;
+	margin-top: 0px;
+}

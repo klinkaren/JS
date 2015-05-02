@@ -1,6 +1,12 @@
-/**
- * Tooltip that looks for class showTooltip and adds a tooltip.
- * Takes info from title of element. 
+/** REMEMBER TO TIP
+ *  - A jQuery tooltip plugin made by Viktor Kjellberg 2015. Free as in speech.
+ *
+ * How:
+ *  - looks for showTooltip class and adds a tooltip.
+ *  - Tooltip info is taken from title and alt attributes. 
+ *
+ * Requires:
+ * - jQuery
  */
 
 /**
@@ -8,7 +14,7 @@
  *  - Change these to change appearance of tooltip.
  */
 var ttWidth = 300, 				// width of tooltip
-		ttColor = '#222',			// text color
+		ttColor = '#cc3333',	// text color
 		ttBgColor = '#fff',		// background color
 		ttBorderRadius = 10,	// border roundness
 		ttPadding = 10,				// padding (inner distance between text and border)
@@ -25,7 +31,7 @@ $(function(){
 	 * Create the tooltip
 	 */ 
 	$('body').append('<div id="tooltip">Tjena</div>');
-	$('body').append('<img id="tooltipArrow" src="arrow'+arrow+'.png" />');
+	$('body').append('<img id="tooltipArrow" src="img/arrow'+arrow+'.png" />');
 
 
 
@@ -111,7 +117,7 @@ $(function(){
 		   			'left': mx+ttMargin-10+'px', 
 		   			'top': my-17+'px',
 	   			})
-	   			.attr('src', 'arrow'+arrow+'.png');
+	   			.attr('src', 'img/arrow'+arrow+'.png');
    		}else{
    			$("#tooltip").css({
 	   			'left': mx-ttWidth-(ttPadding*2)-ttMargin+'px', 
@@ -122,7 +128,7 @@ $(function(){
 		   			'left': mx-ttPadding-ttMargin+10+'px', 
 		   			'top': my-17+'px',
 		   		})
-		   		.attr('src', 'arrow'+arrow+'flipped.png');
+		   		.attr('src', 'img/arrow'+arrow+'flipped.png');
    		}
 
    });

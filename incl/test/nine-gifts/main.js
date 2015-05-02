@@ -153,6 +153,10 @@ $(function(){
     
     console.log("Expanded lightbox.");
   });
+
+
+  // Box 8
+  
  
   console.log('Main.js done!');
 });

@@ -29,7 +29,7 @@ $testlist = array(
 	'kmom03' => array(
 		'1'=> array('text'=>'Test',	 					 'url'=>$path.'test',								'title' => 'Lekplats.'), 
 		'2'=> array('text'=>'Nio paket',				 'url'=>$path.'nine-gifts',							'title' => 'Nio små javascript-paket.'),
-		'3'=> array('text'=>'Plugin',					 'url'=>$path.'plugin',								'title' => 'Min plugin.'),
+		'3'=> array('text'=>'Plugin',					 'url'=>'remember-to-tip',							'title' => 'Min plugin.'),
 	),
   )
 ?>
