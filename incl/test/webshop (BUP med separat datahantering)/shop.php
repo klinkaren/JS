@@ -17,8 +17,9 @@ if ($action == 'clear' || !isset($_SESSION['cart'])) {
 
 // Define the items and prices
 $items = array(
-  'book1' => array('title' => 'The Hitchhikers Guide to the Galaxy', 'price' => '7'),
-  'book2' => array('title' => 'Den stygga flickans rackartyg', 'price' => '8'),
+  'book1' => array('title' => 'JavaScript The Definitive Guide', 'price' => '17'),
+  'book2' => array('title' => 'JavaScript The Good Parts', 'price' => '19'),
+  'book3' => array('title' => 'jQuery Novice To Ninja', 'price' => '23'),
 );
 
 

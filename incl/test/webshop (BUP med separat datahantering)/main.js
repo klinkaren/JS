@@ -2,11 +2,7 @@
  *  VARIABLES
  *  - Change these to personalize webshop.
  */
-var shopName = 'Min webbshop',        // Name of webshop
-    col1 = 'Omslag',
-    col2 = 'Titel',
-    col3 = 'Pris', 
-    col4 = 'Köp';
+var shopName = 'Min webbshop';        // Name of webshop
 
 
 $(document).ready(function(){
@@ -28,7 +24,7 @@ $(document).ready(function(){
   
   $('#cart').append('<h2><img src="img/cart.png" width="40px">Kundvagn</h2>');
   $('#cart').append('<div id="content"></div>');
-  $('#cart').append('<p>Items in cart: <span id="numitems">0</span><br/>Total is: <span id="sum">0</span><br/><br/><input id="clear" type="button" value="Clear" /><form name="pay" action="payment.php" method="get"><input type="submit" value="Pay"></form><span id="status">Nothing has happened yet. Make a purchase.</span></p>');
+  $('#cart').append('<p>Items in cart: <span id="numitems">0</span><br/>Total is: <span id="sum">0</span><br/><br/><input id="clear" type="button" value="Clear" />  <span id="status">Nothing has happened yet. Make a purchase.</span></p>');
   
 
   // Function to update shopping cart
@@ -108,13 +104,6 @@ $(document).ready(function(){
     });
     console.log('Clearing shopping cart.')
   });
-
-
-  // Setting Column names
-  $('#col1').html(col1);
-  $('#col2').html(col2);
-  $('#col3').html(col3);
-  $('#col4').html(col4);
 
   console.log('all done w/ js');
 });
