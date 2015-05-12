@@ -31,6 +31,10 @@ $testlist = array(
 		'2'=> array('text'=>'Nio paket',				 'url'=>$path.'nine-gifts',							'title' => 'Nio små javascript-paket.'),
 		'3'=> array('text'=>'Plugin',					 'url'=>'remember-to-tip',							'title' => 'Min plugin.'),
 	),
+	'kmom04' => array(
+		'1'=> array('text'=>'Marvin', 					 'url'=>$path.'marvin',								'title' => 'Marvin-citat.'), 
+		'2'=> array('text'=>'Login med Ajax',			 'url'=>$path.'login',								'title' => 'Login via Ajax.'),
+	),
   )
 ?>
 
