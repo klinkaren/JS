@@ -3,29 +3,24 @@
  */
 $(document).ready(function(){
   'use strict';
-  $('#ajax').click(function(){
-      $.ajax({
-        url: 'quote.php',
-        dataType: 'json',
-        success: function(data){
-          $('#quote').fadeOut(function() {
-            $('#quote').html(data.quote).fadeIn();
-          });
-          console.log('.ajax() request returned successfully.');    
-        },
-        error: function(jqXHR, textStatus, errorThrown){
-          console.log('.ajax() request failed: ' + textStatus + ', ' + errorThrown);    
-        },
-      });
-    });
 
-    $('#get').click(function(){
-      $.getJSON('quote.php', function(data){
-        $('#quote').fadeOut(function() {
-          $('#quote').html(data.quote).fadeIn();
-        });
-        console.log('.getJSON() request returned successfully.');    
-      });
-    });
+  /**
+  * Eventhandler for #login
+  */
+  $('#login').on('click', function(event) {
+   
+    $('#output').removeClass().addClass('working').html('<img src="http://dbwebb.se/img/loader.gif"/> Performing login...');
+   
+    $.ajax({
+      type: 'post',
+      url: 'login.php?do=login',
+      data: $('#form1').serialize(),
+      dataType: 'json',
+      success: success
+    }); 
+   
+    console.log('Form submitted, lets wait for a response.');
+  });
+
   console.log('all done w/ js');
 });

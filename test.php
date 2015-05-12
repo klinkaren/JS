@@ -34,6 +34,7 @@ $testlist = array(
 	'kmom04' => array(
 		'1'=> array('text'=>'Marvin', 					 'url'=>$path.'marvin',								'title' => 'Marvin-citat.'), 
 		'2'=> array('text'=>'Login med Ajax',			 'url'=>$path.'login',								'title' => 'Login via Ajax.'),
+		'3'=> array('text'=>'Webshop',					 'url'=>$path.'webshop',							'title' => 'Webshop.'),
 	),
   )
 ?>

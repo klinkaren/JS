@@ -1,9 +1,15 @@
  <?php $title='Marvin citat'; include(__DIR__ . '/../mall/header.php'); ?>
 
 <div id='flash'>
-	<h1>Get a quote from Marvin's wisdom</h1>
-	<p><a href=# id="ajax">Get a quote using jquery <code>.ajax()</code></a>.</p>
-	<p><a href=# id="get">Get a quote using the shorthand method <code>.getJSON()</code></a>.</p>
-	<p id="quote"></p>
+	<form id="form1" method=post>
+	  <p><label>Login:<br><input type=text name=user></label></p>
+	  <p><label>Password:<br><input type=password name=password></label></p>
+	  <p>
+	    <input id="login" type=button name=login value=Login>
+	    <input id="logout" type=button name=logout value=Logout>
+	    <input id="status" type=button name=status value=Status>
+	  </p>
+	  <p><output id="output"></output></p>
+	</form>
 </div>
 <?php $path=__DIR__; include(__DIR__ . '/../mall/footer.php'); ?>
