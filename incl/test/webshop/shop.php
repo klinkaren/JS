@@ -1,7 +1,7 @@
 <?php
 // Start session, shopping cart is stored in session
 error_reporting(-1);
-session_name(preg_replace('/[^a-z\d]/i', '', __DIR__));
+session_name('shoppingCart');
 session_start();
 
 // Get the action that controlles what will happen
@@ -60,7 +60,6 @@ $items = $_SESSION['cart']['content'] = <<<EOD
 </table>
 
 EOD;
-
 
 
 // Print out the content of the shopping cart

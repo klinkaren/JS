@@ -117,4 +117,5 @@ $(document).ready(function(){
   $('#col4').html(col4);
 
   console.log('all done w/ js');
+  
 });
