@@ -13,10 +13,10 @@ $title='Upg 3'; include(__DIR__ . '/../mall/header.php'); ?>
 
 //Get the total sum from the session
 if (!isset($_SESSION['cart']) ) {
-    echo "Nothing in cart!";
+    echo "Cart is empty";
 } else {
-    $price = $_SESSION['cart']['sum'];
-    echo "$ {$price} will be drawn from your credit card";
+    $payment = $_SESSION['cart']['sum'];
+    echo "$ The total amout is {$payment}. This amount will be drawn from your credit card.";
 }
 
 ?>
@@ -73,7 +73,7 @@ if (!isset($_SESSION['cart']) ) {
             </select><br>
             <label for="cvc">CVC:</label><br><input type="text" pattern="[0-9]{3,4}" name="cvc" id="cvc" required aria-required=”true”><br>
         </div>
-        <div id="paybutton">
+        <div>
             <input type="submit" value="pay" id="pay"> 
         </div>
     <form>

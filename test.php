@@ -36,6 +36,11 @@ $testlist = array(
 		'2'=> array('text'=>'Login med Ajax',			 'url'=>$path.'login',								'title' => 'Login via Ajax.'),
 		'3'=> array('text'=>'Webshop',					 'url'=>$path.'webshop',							'title' => 'Webshop.'),
 	),
+	'kmom05' => array(
+		'1'=> array('text'=>'Flagga', 					 'url'=>$path.'flag',								'title' => 'Flagga i html5-canvas.'), 
+		'2'=> array('text'=>'Login med Ajax',			 'url'=>$path.'login',								'title' => 'Login via Ajax.'),
+		'3'=> array('text'=>'Webshop',					 'url'=>$path.'webshop',							'title' => 'Webshop.'),
+	),
   )
 ?>
 

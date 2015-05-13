@@ -7,6 +7,29 @@ include("incl/header.php");
 
 <div id="content">
 	<article class="report">
+		<h2>Kmom04: AJAX och JSON med jQuery</h2>
+			<h3>Vad tycker du om Ajax, hur känns det att jobba med?</h3>
+				<p>Tycker Ajax känns krånligt. Har svårt att sätta mig in i tänket. Samtidigt förstår jag fördelarna med det och är glad över att ha fått en inblick i tekniken. Säker på att jag i framtiden kommer fördjupa mig mer i tekniken och sätta mig in mer i DOM-trädet. </p>
+			<h3>Vilka är dina erfarenheter av Ajax inför detta kursmoment?</h3>
+				<p>Någonstans i bakhuvudet fanns det en tanke om att Ajax är en teknik som används för realtidssökning så att man kan leverera förslag till användaren medan användaren skriver in sin sökning. Måste dock erkänna att den tanken låg på tredjeplats i mitt medvetande, efter det holländska fotbollslaget (som Zlatan spelade för ett par år) och regöringsmedlet.</p>
+			<h3>Berätta om din webbshop på din me-sida, hur gjorde du?</h3>
+				<p>Tyckte det här kurmomontet var rätt krångligt så jag försökte hålla det så enkelt som möjligt. Inledningsvis följde jag guiderna så långt det kunde ta mig. Sen byggde jag på med betalningsformuläret. Där valde jag att validera informationen med hjälp av html5. </p>
+				<p>Inledningsvis försökte jag bryta ut all data om böcker (titel, pris, bild) och lägga i en egen fil för att sedan hämta in det. På så vis tänkte jag att man skulle slippa manuell handpåläggning på flera ställen när man uppdaterar utbudet. Tyvärr strulade det här rätt mycket och det slutade med att jag gav upp och följde guiden istället med standardlösningen.</p>
+				<p>Kanske borde man spara alla transaktioner (tillägg/borttagningar i shoppingvagnen) i databasen? Intressant att kunna se statistik på vilka varor som läggs till men sedan tas bort och inte köps i slutändan.</p>
+			<h3>Lyckades du göra extra-uppgiften och paketera din kod?</h3>
+				<p>Inleningsvis hade jag en tanke att göra extrauppgiften men valde som sagt att till slut köra på enklaste möjliga lösning när jag körde fast och tiden började rinna iväg. Eftersom jag studerar på 150% och samtidigt jobbar deltid måste jag tvinga mig själv att försöka vara effektiv. </p>
+		<h2>Kmom03: Grunderna i jQuery</h2>
+			<h3>Vilka är dina erfarenheter av jQuery inför detta kursmoment?</h3>
+				<p>Även om jQuery-filen har funnits med i en del projekt (HTMLPHP, OOPHP, ANAX) så har jag egentligen inte aktivt använt mig så mycket av den. Min kunskapsnivå inför den här kursen var ungefär att jag visste att jQuery hade med javascript att göra. Även om vi använt oss av jQuery i tidigare kursmoment (.ready) i den här kursen måste jag nog erkänna att jag inte hade blivit så jättemycket visare på området innan det här kursmomentet.</p>
+			<h3>Vad tycker du om jQuery, hur känns det?</h3>
+				<p>Inledningsvis kändes det rätt krångligt men efter ett par övningar kände jag att jag började förstå syntaxen. Väldigt smidigt att med små medel kunna visa eller gömma delar med en schysst animation. Samtidigt känns det som att man får akta sig så att inte webbplatsen ser ut som en 90-tals sida med blinkande under construction text. Men fade-in och fade-out funkar ju alltid.</p>
+				<p>Gillar verkligen att använda jQuery. Även om jag kanske inte kommer skriva så många plugins från grunden känns det bra att kunna förstå hur de fungerar och eventuellt modda dem lite. </p>
+			<h3>Berätta om din plugin</h3>
+				<p>Jag har precis blivit klar med kursen OOPHP (som jag för övrigt rekommenderar starkt för er som inte läst den). I det avslutande projektet byggde jag viktorplay, en webbsida om film. När man “hovrar” över en film visas plotten, dvs med hjälp av attributet title. Egentligen ville jag att en ruta skulle visas med information om filmer men visste inte hur jag skulle göra det, även om jag anade att det behövdes javascript... Med det här som bakgrund valde jag att nu skapa en plugin som löser det här. </p>
+				<p>Det jag har gjort är alltså en tooltip-plugin som visar en div om man håller musen över ett objekt, och tar bort den när man för musen av objektet. För att inte strula till designen för besökare som inte har javascript har jag valt att skapa alla objekt med jquery (dvs den div som används skapas och hanteras helt i jquery). Även css-stylen hanteras via jquery.</p>
+				<p>För att använda pluginen behövs såklart jquery och pluginfilen. Sedan använder man sig av classen showTooltip för att visa tooltip. Pluginen hämtar då informationen från title och alt för att visa som rubrik och löptext. </p>
+				<p>Genom att ha koll på sidbredden och jämföra den med (muspekarens position + bredden av tooltip) bestäms om tooltip ska visas till höger eller vänster. På så sätt minskar risken för att tooltip hamnar utanför sidan.</p>
+				
 		<h1>Redovisning av kursmoment</h1>
 			<h2>Kmom02: Programmera med JavaScript</h2>
 				<p>Tyckte det här kursmomentet var klurigt. Blev väldigt få utsvävningar från min sida då jag var tvungen att lägga stor tonvikt vid att förstå koden och komma in i syntaxen. Använde mig väldigt mycket av Firebug för att felsöka med hjälp av möjligheten att stega sig igenom javascript. Väldigt användbart och bra för att förstå hur koden exekveras.</p>
@@ -24,7 +47,7 @@ include("incl/header.php");
 				<h3>Övrigt</h3>
 					<p>Använde mig mycket av Firebug för att felsöka med hjälp av möjligheten att stega sig igenom javascript. Väldigt användbart och bra för att förstå hur koden exekveras. </p>
 
-			<h2>Kmom01: Kom igång med JavaScript</h2>
+	<h2>Kmom01: Kom igång med JavaScript</h2>
 				<h3>Vilken utvecklingsmiljö använder du?</h3>
 					<p>Använder mig av XAMPP, FileZilla och Sublime (efter lite stök lyckades jag få till så även less-filer färgkodas). Till största del arbetar jag på min laptop som kör Ubuntu 14.04. Synkar med hjälp av Github och kan därför arbeta vidare på min stationära windowsburk när jag är hemma. Också där använder jag mig av kombinationen XAMPP, Sublime, FileZilla och Github. </p>
 				<h3>Hur väl känner du till JavaScript?</h3>
@@ -36,7 +59,8 @@ include("incl/header.php");
 					<p>Sen gjorde jag de två exempelprogrammen med baddies, de som använder sig av CSS och JS för att ändra utseende och förflytta baddien. Här kopierade koden och fokuserade på att försöka förstå den för att sedan göra extrauppgiften och lägga till funktionalitet för en dubbel salto. Lite pickligt men väldigt roligt.</p>
 				<h3>Beskriv hur du gjort din baddie och vilka konster den kan.</h3>
 					<p>Eftersom jag arbetar i linux gjorde jag min baddie efter Tux. Hittade en höger-profil av Tux på <a href="https://openclipart.org/tags/baddie">https://openclipart.org/tags/baddie</a> och använde Inkscape för att skapa en svg-fil lik mickey-mos. När Tux väl var på plats lärde jag honom att göra dubbla saltos som sker när Tux är vänd till höger eller vänster och man trycker på s. Då tar Tux ett rejält skutt framåt och gör en dubbel salto på vägen. För att få det här att se någorlunda bra ut använde jag mig av setTimeout med olika fördröjningar och JS för förflyttning uppåt/sidled/nedåt och fördröjning och CSS för rotering 720 grader.</p>
-	</article>
+
+				</article>
 </div>
 
 <?php include("incl/footer.php"); ?>
