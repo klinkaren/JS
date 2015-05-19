@@ -107,17 +107,15 @@
 		<p>"This is not a slideshow" - Magritte 2.0</p>
 	</span>
 </div>
-<div id="box9" class="box">
-	<div class='minimize' title='Miminize this box'>x</div>
-	<img src="../../../img/giftbox.png" alt="" class="gift">
-	<h1 class="gift">9.</h1>
-		<span class="unwrapped">
-		<h1>1. Selecting items, hide, show and change their look</h1>
-		<p>Aint it funny to be young. No worries here. I'm smiling :-D and I still have those shoes somewhere in the attic.</p>  
-		<p>This example is just to get going. You migh wonder how this box opens and closes? Its just a matter of hiding and showing the elements you want to display. The box minimizes itself when you click the x up in the right corner and you can open it up in full width by clicking the number or the wrapped giftbox.</p>
-		<p>When you click on the text or images in this example it will shift (toggle) between dark and light color.</p>
-		<p>Its all about using selectors and the eventhandlers.</p>
-	</span>
+<div id='box9' class='box'>
+<div class='minimize'>x</div>
+<img class='gift' src='../../../img/giftbox.png' alt='' />
+<h1 class='gift'>9.</h1>
+<img class='example' src='/image/mikael-roos/me-8.jpg?w=200' alt='' width='200px' />
+<h1 class= 'example'>A jquery plugin</h1>
+<p>A wrapped present is always nice. Santa seems to be a nice person.</p>
+<p>Lets wrap all this exercise together in a jQuery package, wrapped as a jQuery plugin which is a nice way of extending jQuery.</p>
+<p>Here I have added two plugins. One that shifts the font each time you click on the text, its called <code>.shiftFont()</code>. Click around and watch it change. The plugin can be configured to use a defined set of fonts to shift between. The other plugin is called <code>.fadeInOut()</code> and will trigger when you click the image.</p>
 </div>
 
 <table class="data" id="celebs">

@@ -23,8 +23,8 @@
 		<li>Use the class showTooltip to show a tooltip. Set attributes title and alt. These will be the headline and the paragraph text in the tooltip.</li>
 	</ol>
 	<h2>How to style</h2>
-	<p>Open main.js<br/>
-	In the third row the plugin toolTip is added to the class showTooltip. Here you can pass along 4 variables if you want to (background color, text color, width and border radius).</p>
+	<p>Open main.js<p>
+	<p>At the top you will find a section with variables. Change these to your liking.<br>
 	<img src="info/variables.png" alt="Change these variables to your liking." class="showTooltip" title="Variables">
 	</p>
 	<div id="madeBy" class="right">&copy; Viktor Kjellberg 2015. <a href="www.viktorkjellberg.com">www.viktorkjellberg.com</a></div>
