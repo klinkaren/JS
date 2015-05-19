@@ -7,7 +7,7 @@
 
 
 // Include the CImage class
-require_once('../src/CImage/CImage.php');
+require_once('src/CImage/CImage.php');
 
 
 

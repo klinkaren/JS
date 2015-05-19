@@ -7,6 +7,20 @@ include("incl/header.php");
 
 <div id="content">
 	<article class="report">
+<<<<<<< HEAD
+=======
+		<h2>Kmom04: AJAX och JSON med jQuery</h2>
+			<h3>Vad tycker du om Ajax, hur känns det att jobba med?</h3>
+				<p>Tycker Ajax känns krånligt. Har svårt att sätta mig in i tänket. Samtidigt förstår jag fördelarna med det och är glad över att ha fått en inblick i tekniken. Säker på att jag i framtiden kommer fördjupa mig mer i tekniken och sätta mig in mer i DOM-trädet. </p>
+			<h3>Vilka är dina erfarenheter av Ajax inför detta kursmoment?</h3>
+				<p>Någonstans i bakhuvudet fanns det en tanke om att Ajax är en teknik som används för realtidssökning så att man kan leverera förslag till användaren medan användaren skriver in sin sökning. Måste dock erkänna att den tanken låg på tredjeplats i mitt medvetande, efter det holländska fotbollslaget (som Zlatan spelade för ett par år) och regöringsmedlet.</p>
+			<h3>Berätta om din webbshop på din me-sida, hur gjorde du?</h3>
+				<p>Tyckte det här kurmomontet var rätt krångligt så jag försökte hålla det så enkelt som möjligt. Inledningsvis följde jag guiderna så långt det kunde ta mig. Sen byggde jag på med betalningsformuläret. Där valde jag att validera informationen med hjälp av html5. </p>
+				<p>Inledningsvis försökte jag bryta ut all data om böcker (titel, pris, bild) och lägga i en egen fil för att sedan hämta in det. På så vis tänkte jag att man skulle slippa manuell handpåläggning på flera ställen när man uppdaterar utbudet. Tyvärr strulade det här rätt mycket och det slutade med att jag gav upp och följde guiden istället med standardlösningen.</p>
+				<p>Kanske borde man spara alla transaktioner (tillägg/borttagningar i shoppingvagnen) i databasen? Intressant att kunna se statistik på vilka varor som läggs till men sedan tas bort och inte köps i slutändan.</p>
+			<h3>Lyckades du göra extra-uppgiften och paketera din kod?</h3>
+				<p>Inleningsvis hade jag en tanke att göra extrauppgiften men valde som sagt att till slut köra på enklaste möjliga lösning när jag körde fast och tiden började rinna iväg. Eftersom jag studerar på 150% och samtidigt jobbar deltid måste jag tvinga mig själv att försöka vara effektiv. </p>
+>>>>>>> 1deccdf00c7f1746a3a8043fdcd5e78ae571b14f
 		<h2>Kmom03: Grunderna i jQuery</h2>
 			<h3>Vilka är dina erfarenheter av jQuery inför detta kursmoment?</h3>
 				<p>Även om jQuery-filen har funnits med i en del projekt (HTMLPHP, OOPHP, ANAX) så har jag egentligen inte aktivt använt mig så mycket av den. Min kunskapsnivå inför den här kursen var ungefär att jag visste att jQuery hade med javascript att göra. Även om vi använt oss av jQuery i tidigare kursmoment (.ready) i den här kursen måste jag nog erkänna att jag inte hade blivit så jättemycket visare på området innan det här kursmomentet.</p>
