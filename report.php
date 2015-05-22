@@ -7,8 +7,19 @@ include("incl/header.php");
 
 <div id="content">
 	<article class="report">
-<<<<<<< HEAD
-=======
+		<h2>Kmom05: HTML5 och Canvas</h2>
+				<p>Tycker det här var en svår uppgift. Inledningsvis var det väldigt frustrerande men efter ett par dagars irritation kom jag över nån form av tröskel och det vände och blev fantastiskt utmanande och roligt.</p>
+			<h3>Vilka möjligheter ser du med HTML5 Canvas? </h3>
+				<p>Även om det är roligt att kunna göra spel och lätt att stirra sig blind på det just nu öppnar HTML5 Canvas upp för en hel uppsjö med andra möjligheter också. Man borde ju kunna minska laddtider med smartare grafik. Jag bygger exempelvis min bakgrund med hjälp av gradient och en array som placerar ut stjärnor, istället för att ha en bild. Jag testade också att göra ett par flaggor (<a href="http://www.student.bth.se/~vikj14/javascript/incl/test/flag/">http://www.student.bth.se/~vikj14/javascript/incl/test/flag/</a>), vilket i och för sig kunnat lösa med några divs. Hittade sedan en klocka (<a href="http://www.student.bth.se/~vikj14/javascript/incl/test/clock/">http://www.student.bth.se/~vikj14/javascript/incl/test/clock/</a>) som jag kopierade in och ändrade lite. Här började jag förstå vilka möjligheter som finns med HTML5 canvas.</p>
+			<h3>Hur avancerat gjorde du din spelfysik?</h3>
+				<p>Eftersom jag utgift ifrån övningen (<a href="http://dbwebb.se/kunskap/ett-spel-i-html5-canvas-med-javascript-och-prototypbaserad-programmering">http://dbwebb.se/kunskap/ett-spel-i-html5-canvas-med-javascript-och-prototypbaserad-programmering</a>) fick jag ju med en hel del spelfysik (bl a hastighet, gravitation, drag etc). Ändrade lite i fysikens lagar så att mitt skepp inte kan lämna universum på ena sidan av canvasen och komma ut igen på andra sidan (orättvist nog får asteroiderna göra det). Kanske kan man kalla kollissionshanteringen för fysik? Att skeppet exploderar vid krock med asteroid och att planeten gör detsamma om en asteroid när den?</p>
+			<h3>Beskriv och berätta om ditt spel. Förklara hur du använder objekt och prototyper.</h3>
+				<p>Har nog fortfarande inte greppat det här med prototyper helt. Har byggt player, asteroid och missile som prototyper. När ett asteroid-objekt skapas så görs det utifrån Asteroid-prototypen och läggs i en array som fylls på med asteroid-objekt. Samma sak gäller missile som läggs till när man skjuter och tas bort vid träff eller när de lämnar canvasen. Av player skapas bara ett objekt (ship), men i och med att det är en prototyp som äger en array av missiles och en variabel för score finns det potential att växa spelet till multiplayer genom att lägga till fler objekt av player.</p>
+			<h3>Gjorde du något på extrauppgiften?</h3>
+				<p>När jag väl började bli klar tyckte jag att det var så roligt att jag hade svårt att sluta. Eftersom jag läser 150% och jobbar lite parallellt fick jag dock besinna mig. La hur som helst till ljud för att öka upplevelsen lite :) </p>
+				<p>Pröva gärna mitt spel. Jag kommer till lever 9. <i>Hur långt kommer du?</i></p>
+				<p><a href="http://www.student.bth.se/~vikj14/javascript/incl/test/asteroids/">Spela!</a></p>
+
 		<h2>Kmom04: AJAX och JSON med jQuery</h2>
 			<h3>Vad tycker du om Ajax, hur känns det att jobba med?</h3>
 				<p>Tycker Ajax känns krånligt. Har svårt att sätta mig in i tänket. Samtidigt förstår jag fördelarna med det och är glad över att ha fått en inblick i tekniken. Säker på att jag i framtiden kommer fördjupa mig mer i tekniken och sätta mig in mer i DOM-trädet. </p>
@@ -20,7 +31,6 @@ include("incl/header.php");
 				<p>Kanske borde man spara alla transaktioner (tillägg/borttagningar i shoppingvagnen) i databasen? Intressant att kunna se statistik på vilka varor som läggs till men sedan tas bort och inte köps i slutändan.</p>
 			<h3>Lyckades du göra extra-uppgiften och paketera din kod?</h3>
 				<p>Inleningsvis hade jag en tanke att göra extrauppgiften men valde som sagt att till slut köra på enklaste möjliga lösning när jag körde fast och tiden började rinna iväg. Eftersom jag studerar på 150% och samtidigt jobbar deltid måste jag tvinga mig själv att försöka vara effektiv. </p>
->>>>>>> 1deccdf00c7f1746a3a8043fdcd5e78ae571b14f
 		<h2>Kmom03: Grunderna i jQuery</h2>
 			<h3>Vilka är dina erfarenheter av jQuery inför detta kursmoment?</h3>
 				<p>Även om jQuery-filen har funnits med i en del projekt (HTMLPHP, OOPHP, ANAX) så har jag egentligen inte aktivt använt mig så mycket av den. Min kunskapsnivå inför den här kursen var ungefär att jag visste att jQuery hade med javascript att göra. Även om vi använt oss av jQuery i tidigare kursmoment (.ready) i den här kursen måste jag nog erkänna att jag inte hade blivit så jättemycket visare på området innan det här kursmomentet.</p>

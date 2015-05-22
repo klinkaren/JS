@@ -37,9 +37,11 @@ $testlist = array(
 		'3'=> array('text'=>'Webshop',					 'url'=>$path.'webshop',							'title' => 'Webshop.'),
 	),
 	'kmom05' => array(
-		'1'=> array('text'=>'Flagga', 					 'url'=>$path.'flag',								'title' => 'Flagga i html5-canvas.'), 
-		'2'=> array('text'=>'Login med Ajax',			 'url'=>$path.'login',								'title' => 'Login via Ajax.'),
-		'3'=> array('text'=>'Webshop',					 'url'=>$path.'webshop',							'title' => 'Webshop.'),
+		'1'=> array('text'=>'Flaggor', 					 'url'=>$path.'flag',								'title' => 'Flagga i html5-canvas.'), 
+		'2'=> array('text'=>'Klocka', 					 'url'=>$path.'clock',								'title' => 'Klocka i html5-canvas.'), 
+		'3'=> array('text'=>'Asteroids | Grund',	 	 'url'=>$path.'asteroids-bottom',					'title' => 'Asteroids: Första steg med bottenplatta att undvika.'),
+		'4'=> array('text'=>'Asteroids | +Skott',		 'url'=>$path.'asteroids-shots',					'title' => 'Asteroids: Nu med skott.'),
+		'5'=> array('text'=>'Asteroids',				 'url'=>$path.'asteroids',							'title' => 'Asteroids: Hela spelet.'),
 	),
   )
 ?>
