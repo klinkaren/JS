@@ -1,25 +1,18 @@
-<?php 
-// Create the session
-session_name('vikj14ShoppingCart');
-session_start();
+<?php
+include("incl/config.php");
+$title = "Webshop";
+$pageId = "myshop";
+include("incl/header.php");
+?>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/shop.js"></script>
 
-$title='Upg 3'; include(__DIR__ . '/../mall/header.php'); ?>
- 
-<div id='flash'>
+<div>
 
 <h1>Payment</h1>
 
-<?
+<div id='paymentInfo'>The total amout is <span id="sum"></span>. This amount will be drawn from your credit card.</div>
 
-//Get the total sum from the session
-if (!isset($_SESSION['cart']) ) {
-    echo "Cart is empty";
-} else {
-    $payment = $_SESSION['cart']['sum'];
-    echo "<div id='paymentInfo'>$ The total amout is {$payment}. This amount will be drawn from your credit card.</div>";
-}
-
-?>
     <fieldset>
     <form  id="purchase" name="purchase">
         <div class="columnHalf">
@@ -78,8 +71,7 @@ if (!isset($_SESSION['cart']) ) {
         </div>
     <form>
     </fieldset>
-    <div id="result"></div>
 </div>
 
  
-<?php $path=__DIR__; include(__DIR__ . '/../mall/footer.php'); ?>
+<?php include("incl/footer.php"); ?>

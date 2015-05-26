@@ -1,7 +1,7 @@
 <?php
 include("incl/config.php");
 $title = "Chat";
-$pageId = "chat";
+$pageId = "mychat";
 include("incl/header.php");?>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/chat.js"></script>

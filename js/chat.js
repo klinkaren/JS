@@ -1,25 +1,3 @@
-/**
- * Functions
- */
-function chatMessage(msg){
-  $('#chat').append(getNow() + ': ' + msg + '\r\n');
-}
-
-// Return current time as hh:mm:ss
-function getNow(){
-  time = new Date();
-
-  var hh = time.getHours();
-  if (hh < 10){hh = "0" + hh;};
-  var mm = time.getMinutes();
-  if (mm < 10){mm = "0" + mm;};
-  var ss = time.getSeconds() ;
-  if (ss < 10){ss = "0" + ss;};
-
-  return hh + ":" + mm + ":" + ss;
-}
-
-
 
 /**
  * When page is loaded
@@ -33,6 +11,29 @@ $(document).ready(function(){
       chat       = document.getElementById('chat'),
       websocket  = null; 
       name;
+  
+
+  /**
+   * Functions
+   */
+  function chatMessage(msg){
+    $('#chat').append(getNow() + ': ' + msg + '\r\n');
+  }
+
+  // Return current time as hh:mm:ss
+  function getNow(){
+    var time = new Date();
+
+    var hh = time.getHours();
+    if (hh < 10){hh = "0" + hh;};
+    var mm = time.getMinutes();
+    if (mm < 10){mm = "0" + mm;};
+    var ss = time.getSeconds() ;
+    if (ss < 10){ss = "0" + ss;};
+
+    return hh + ":" + mm + ":" + ss;
+  }
+
 
   // Event handler to create the websocket connection when someone clicks the button #connect
   connect.addEventListener('click', function(event) {

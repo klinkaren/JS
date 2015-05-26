@@ -16,12 +16,12 @@ if (!isset($_SESSION['cart']) ) {
     echo "Cart is empty";
 } else {
     $payment = $_SESSION['cart']['sum'];
-    echo "<div id='paymentInfo'>$ The total amout is {$payment}. This amount will be drawn from your credit card.</div>";
+    echo "$ The total amout is {$payment}. This amount will be drawn from your credit card.";
 }
 
 ?>
     <fieldset>
-    <form  id="purchase" name="purchase">
+    <form  id="payment_form" name="payment_form">
         <div class="columnHalf">
             
             <label for="firstname">First name:</label><br><input type="text" pattern="[A-Öa-ö]{2,}" name="firstname" id="firstname" required aria-required=”true”> <br>
@@ -74,7 +74,7 @@ if (!isset($_SESSION['cart']) ) {
             <label for="cvc">CVC:</label><br><input type="text" pattern="[0-9]{3,4}" name="cvc" id="cvc" required aria-required=”true”><br>
         </div>
         <div>
-            <input id="btnPurchase" type="submit" value="Purchase" name="Perchase">
+            <input type="submit" value="pay" id="pay"> 
         </div>
     <form>
     </fieldset>

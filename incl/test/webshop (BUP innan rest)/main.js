@@ -30,11 +30,6 @@ $(document).ready(function(){
   $('#cart').append('<div id="content"></div>');
   $('#cart').append('<p>Items in cart: <span id="numitems">0</span><br/>Total is: <span id="sum">0</span><br/><br/><input id="clear" type="button" value="Clear" /><form name="pay" action="payment.php" method="get"><input type="submit" value="Pay"></form><span id="status">Nothing has happened yet. Make a purchase.</span></p>');
   
-  // Function for payment confirmation
-  var paymentDone = function(data) {
-    $('#paymentInfo').html("Transaction completed. " + data.numitems + " book(s) will be sent to you.");
-    $('#purchase').css({'display': 'none'});
-  };
 
   // Function to update shopping cart
   var updateCart = function(data) {
@@ -74,29 +69,8 @@ $(document).ready(function(){
   };
   initCart();
 
-  var clearCart = function() {
-    $.ajax({
-      type: 'post',
-      url: 'shop.php?action=clear',
-      dataType: 'json',
-      success: function(data){
-        updateCart(data);
-        console.log('Ajax request returned successfully.');    
-      },
-      error: function(jqXHR, textStatus, errorThrown){
-        console.log('Ajax request failed: ' + textStatus + ', ' + errorThrown);    
-      },
-    });
-    console.log('Clearing shopping cart.')
-  };
 
-  // Callback to clear all values in shopping cart
-  $("#clear").click(function() {
-    clearCart();
-  });
-
-
-  // Callback when adding to cart
+  // Callback when making a purchase
   $('.purchase').click(function() {
     var id = $(this).attr('id');
     $.ajax({
@@ -118,31 +92,23 @@ $(document).ready(function(){
   });
 
 
-  // Callback when checking out and purchasing items
-  $("#purchase").on("submit", function (event) {
-    
-    var formData = $(this).serialize();
-    console.log("Form submitted with " + formData);
-    //$("#output").html("Payment in progress...<img width='30' src='loader.gif'/>");
-    //$("#output").removeClass("finished").removeClass("failed").addClass("waiting");
-    event.preventDefault();
-    
+  // Callback to clear all values in shopping cart
+  $("#clear").click(function() {
     $.ajax({
       type: 'post',
-      url: 'shop.php?action=pay',
-      data: formData,  
+      url: 'shop.php?action=clear',
       dataType: 'json',
-      success: function(data){                
-        console.log("Payment done");
-        paymentDone(data);  
-        clearCart();                 
+      success: function(data){
+        updateCart(data);
+        console.log('Ajax request returned successfully.');    
       },
       error: function(jqXHR, textStatus, errorThrown){
-          console.log('Ajax request failed: ' + textStatus + ', ' + errorThrown);
-      }
-    }); 
-                      
+        console.log('Ajax request failed: ' + textStatus + ', ' + errorThrown);    
+      },
+    });
+    console.log('Clearing shopping cart.')
   });
+
 
   // Setting Column names
   $('#col1').html(col1);

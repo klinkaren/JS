@@ -1,3 +1,9 @@
+
+
+
+$(document).ready(function(){
+  'use strict';
+
 /**
  *  VARIABLES
  *  - Change these to personalize webshop.
@@ -7,10 +13,6 @@ var shopName = 'Min webbshop',        // Name of webshop
     col2 = 'Titel',
     col3 = 'Pris', 
     col4 = 'Köp';
-
-
-$(document).ready(function(){
-  'use strict';
 
   // Set page title
   document.title = shopName;
@@ -32,7 +34,7 @@ $(document).ready(function(){
   
   // Function for payment confirmation
   var paymentDone = function(data) {
-    $('#paymentInfo').html("Transaction completed. " + data.numitems + " book(s) will be sent to you.");
+    $('#paymentInfo').html("Transaction completed. <p><a href=webshop.php>Shop more</a></p>");
     $('#purchase').css({'display': 'none'});
   };
 

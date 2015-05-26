@@ -40,8 +40,11 @@ if ($action == 'add' && !empty($_POST['itemid'])) {
 }
 
 
-// Action to remove item from shopping cart
-
+// Action to purchase items in shopping cart
+if ($action == 'pay') {
+  // Clear shopping cart
+  $_SESSION['cart'] = array('sum'=>0, 'numitems' => 0, 'items'=>array());
+}
 
 
 // Draw html table of items  by using a view/template file
