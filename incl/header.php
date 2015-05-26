@@ -20,6 +20,7 @@
       <nav class="navmenu">
     		<a id="me-"      href="me.php">Me</a>
     		<a id="report-"  href="report.php">Redovisning</a>
-    		<a id="test-" 	 href="test.php">Test</a> 
+    		<a id="test-" 	 href="test.php">Test</a>
+        <a id="chat-"    href="chat.php">Chat</a> 
       </nav>
    </header>

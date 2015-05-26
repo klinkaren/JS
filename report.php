@@ -7,6 +7,12 @@ include("incl/header.php");
 
 <div id="content">
 	<article class="report">
+		<h2>Kmom06: HTML5 och Websockets</h2>
+			<p>Intressant kursmoment med helt nya tekniker för mig. Gillar verkligen möjligheterna med websockets och kommunikationen mellan server och klient. Tänker att det här kan användas till så mycket mer än en enkel chat.</p>
+			<p>Node.js var helt nytt för mig. Sitter med Ubuntu och strulade en hel del innan jag lyckades få det att fungera lokalt. När det väl fungerade hade jag inga större problem med det. </p>
+			<p>Följde till stor del guiden och skapade en gemensam echo och broadcast-server. När jag sedan byggde chatten använde jag mig helt enkelt av den samma server. I chatten måste man ange ett namn för att kunna ansluta. Man får meddelande när någon ansluter eller kopplar från samt om någon skickar ett meddelande. </p>
+			<p>Har en NAS som står och brummar i garderoben hemma – skulle ju va fantastiskt att kunna använda den som server för sånt här. Öppnar i så fall en hel del möjligheter för mig med HTML5 Websockets. Skulle ju va roligt att kunna skapa multiplayer-spel som hanteras av min egen server. Just nu är jag på resande fot men ser fram emot att testa direkt när jag kommer hem igen.</p>
+
 		<h2>Kmom05: HTML5 och Canvas</h2>
 				<p>Tycker det här var en svår uppgift. Inledningsvis var det väldigt frustrerande men efter ett par dagars irritation kom jag över nån form av tröskel och det vände och blev fantastiskt utmanande och roligt.</p>
 			<h3>Vilka möjligheter ser du med HTML5 Canvas? </h3>

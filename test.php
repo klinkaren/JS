@@ -43,6 +43,11 @@ $testlist = array(
 		'4'=> array('text'=>'Asteroids | +Skott',		 'url'=>$path.'asteroids-shots',					'title' => 'Asteroids: Nu med skott.'),
 		'5'=> array('text'=>'Asteroids',				 'url'=>$path.'asteroids',							'title' => 'Asteroids: Hela spelet.'),
 	),
+	'kmom06' => array(
+		'1'=> array('text'=>'Echo protocol',		 	'url'=>$path.'echo-protocol',						'title' => 'Echo protocol.'), 
+		'2'=> array('text'=>'Broadcast protocol',	 	'url'=>$path.'broadcast-protocol',					'title' => 'Broadcast protocol.'),
+		'3'=> array('text'=>'Chat',					 	'url'=>$path.'chat',								'title' => 'Chat.'),
+	),
   )
 ?>
 
